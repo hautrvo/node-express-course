@@ -9,8 +9,8 @@ const mockUserData = [
     }
 ]
 
-app.get('/users', function(){
-    resizeBy.json({
+app.get('/users', function(req, res){
+    res.json({
         success: true,
         message: 'successfully got users. Nice!',
         users: mockUserData
